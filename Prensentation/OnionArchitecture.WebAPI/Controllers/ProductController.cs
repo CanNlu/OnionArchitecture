@@ -25,7 +25,7 @@ namespace OnionArchitecture.WebAPI.Controllers
         [HttpGet("sendemail")]
         public IActionResult SendEmail()
         {
-            bool result = _emailService.Send("can.289@hotmail.com", "Test - test");
+            bool result = _emailService.Send("test", "Test - test");
             return Ok(result);
         }
 
@@ -41,7 +41,7 @@ namespace OnionArchitecture.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Kaydetmek için
+        /// Güncelleme için
         /// </summary>
         /// <param name="product"></param>
         /// <returns></returns>
@@ -49,6 +49,17 @@ namespace OnionArchitecture.WebAPI.Controllers
         public async Task Update(Product product)
         {
             await _productRepository.UpdateAsync(product);
+        }
+
+        /// <summary>
+        /// Güncelleme için
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        [HttpDelete("delete")]
+        public async Task Delete(Product product)
+        {
+            await _productRepository.DeleteAsync(product);
         }
     }
 }

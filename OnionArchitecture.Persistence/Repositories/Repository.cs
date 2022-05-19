@@ -20,10 +20,11 @@ namespace OnionArchitecture.Persistence.Repositories
             return entity;
         }
 
-        public async Task UpdateAsync(T entity)
+        public async Task<int> UpdateAsync(T entity)
         {
             Table.Update(entity);
             await _context.SaveChangesAsync();
+            return 1;
         }
         public async Task DeleteAsync(T entity)
         {

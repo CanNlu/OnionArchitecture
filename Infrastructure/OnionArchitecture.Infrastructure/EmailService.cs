@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OnionArchitecture.Application.Interfaces;
 
 namespace OnionArchitecture.Infrastructure
 {
-    internal class EmailService
+    public class EmailService : IEmailService
     {
+        public bool Send(string to, string message)
+        {
+            Console.WriteLine("mail sent");
+            return true;
+        }
     }
 }

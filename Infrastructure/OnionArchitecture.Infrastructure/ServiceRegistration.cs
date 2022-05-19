@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using OnionArchitecture.Application.Interfaces;
 
 namespace OnionArchitecture.Infrastructure
 {
-    internal class ServiceRegistration
+    public static class ServiceRegistration
     {
+        public static void AddInfrastructureServices(this IServiceCollection serviceCollection)
+        {
+            serviceCollection.AddTransient<IEmailService, EmailService>();
+        }
     }
 }

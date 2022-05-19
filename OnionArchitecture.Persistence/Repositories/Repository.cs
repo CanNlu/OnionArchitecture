@@ -19,8 +19,22 @@ namespace OnionArchitecture.Persistence.Repositories
             await _context.SaveChangesAsync();
             return entity;
         }
-        public async Task<List<T>> GetAsync() => await Table.ToListAsync();
-        public async Task<T> GetByIdAsync(Guid id) => await Table.FindAsync(id);
+
+        public async Task UpdateAsync(T entity)
+        {
+            Table.Update(entity);
+            await _context.SaveChangesAsync();
+        }
+        public async Task DeleteAsync(T entity)
+        {
+            Table.Remove(entity);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<T>> GetAllAsync() => await Table.ToListAsync();
+
+        public async Task<T> GetByIdAsync(int id) => await Table.FindAsync(id);
+
     }
 }
 

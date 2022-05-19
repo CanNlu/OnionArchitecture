@@ -6,5 +6,6 @@ namespace OnionArchitecture.Application.Interfaces.Context
     public interface IApplicationContext
     {
         DbSet<Product> Products { get; set; }
+        DbSet<Category> Categories { get; set; }
     }
 }

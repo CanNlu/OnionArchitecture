@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OnionArchitecture.Application\OnionArchitecture.Application.csproj" />
     <ProjectReference Include="..\src\Core\OnionArchitecture.Domain\OnionArchitecture.Domain.csproj" />
   </ItemGroup>
 

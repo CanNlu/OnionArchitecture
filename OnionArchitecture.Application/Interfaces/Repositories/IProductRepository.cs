@@ -1,6 +1,6 @@
 ﻿using OnionArchitecture.Domain.Entities;
 
-namespace OnionArchitecture.Persistence.Repositories
+namespace OnionArchitecture.Application.Interfaces.Repositories
 {
     public interface IProductRepository : IRepository<Product>
     {

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using OnionArchitecture.Application.Interfaces.Repositories;
 using OnionArchitecture.Domain.Common;
 using OnionArchitecture.Persistence.Context;
 

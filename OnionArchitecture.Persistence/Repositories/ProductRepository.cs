@@ -1,4 +1,5 @@
-﻿using OnionArchitecture.Domain.Entities;
+﻿using OnionArchitecture.Application.Interfaces.Repositories;
+using OnionArchitecture.Domain.Entities;
 using OnionArchitecture.Persistence.Context;
 
 namespace OnionArchitecture.Persistence.Repositories

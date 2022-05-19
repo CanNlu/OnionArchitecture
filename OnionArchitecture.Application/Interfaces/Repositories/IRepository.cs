@@ -1,6 +1,6 @@
 ﻿using OnionArchitecture.Domain.Common;
 
-namespace OnionArchitecture.Persistence.Repositories
+namespace OnionArchitecture.Application.Interfaces.Repositories
 {
     public interface IRepository<T> where T : BaseEntity, new()
     {

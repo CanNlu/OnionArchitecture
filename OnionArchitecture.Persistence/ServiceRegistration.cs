@@ -1,14 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OnionArchitecture.Application.Interfaces.Repositories;
+using OnionArchitecture.Application.Interfaces.UnitOfWork;
 using OnionArchitecture.Persistence.Context;
 using OnionArchitecture.Persistence.Repositories;
 using OnionArchitecture.Persistence.UnitOfWorks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnionArchitecture.Persistence
 {

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
+using OnionArchitecture.Application.Interfaces.Repositories;
+using OnionArchitecture.Application.Interfaces.UnitOfWork;
 using OnionArchitecture.Persistence.Context;
-using OnionArchitecture.Persistence.Repositories;
 
 namespace OnionArchitecture.Persistence.UnitOfWorks
 {

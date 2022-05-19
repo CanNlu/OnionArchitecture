@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
-using OnionArchitecture.Persistence.Repositories;
+using OnionArchitecture.Application.Interfaces.Repositories;
 
-namespace OnionArchitecture.Persistence.UnitOfWorks
+namespace OnionArchitecture.Application.Interfaces.UnitOfWork
 {
     public interface IUnitOfWork : IAsyncDisposable
     {
